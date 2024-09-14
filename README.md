@@ -4,19 +4,20 @@
 
 This project focuses on predicting stock prices using a **univariate linear regression algorithm**, built entirely from scratch without the use of any machine learning libraries such as Scikit-learn or TensorFlow. The goal of this project is twofold:
 
-1. **To predict future stock prices** based on historical stock data.
+1. **To predict stocks' future closing prices** based on historical closing price data.
 2. **To gain a deep understanding of how the linear regression algorithm works** by implementing every aspect manually, from the cost function to the optimization process.
 
 ### Key Aspects of the Project:
 
 1. **Data Collection and Preprocessing**:
    - **Historical Stock Data**: The dataset consists of daily historical closing prices of a selected stock. The data is cleaned to remove any null values.
-   - **Feature and Label**: In this univariate regression model, the only feature is the stock price on the previous day, and the label is the stock price on the given day.
+   - **Feature and Label**: In this univariate regression model, the only feature is the stocks' closing price on the previous day, and the label is the stocks' closing price on the given day.
+   - **Feature extraction**: Feature is extracted by using the close price of the previous day for predicting the close price of the next day.
 
 2. **Algorithm Explanation**:
    - **Univariate Linear Regression**: The model aims to find a linear relationship between the previous day closing price and a given close price for a stock. The relationship is modeled using the linear equation:
      - \( y = wx + b \)
-     - Where \( y \) is the predicted current closing stock price, \( x \) is the previous day close price, \( m \) is the slope of the line, and \( b \) is the intercept.
+     - Where \( y \) is the predicted current closing stock price, \( x \) is the previous day close price, \( w \) is the slope of the line, and \( b \) is the intercept.
    - The algorithm works by iteratively adjusting the values of \( w \) and \( b \) to minimize the **mean squared error (MSE)** between predicted and actual stock prices, using **gradient descent** as the optimization technique.
 
 3. **Understanding Linear Regression**:
