@@ -1,4 +1,4 @@
-# LinerRegressionFromScratch
+# LinearRegressionFromScratch
 
 ## Project Description:
 
@@ -41,7 +41,7 @@ This project focuses on predicting stock prices using a **univariate linear regr
    - The model is evaluated using **Root Mean Squared Error (RMSE)**, providing insight into the accuracy of the predicted stock prices compared to actual stock prices.
 
 7. **Visualization**:
-   - A comparison plot of how well does the **linear regression model** represents the **training data** is provided.
+   - A comparison plot of how well the **linear regression model** represents the **training data**.
    - A comparison plot of **actual vs predicted stock prices** is generated to visually inspect how closely the predictions align with the real data.
    - A **loss curve** is created to visualize the reduction in the cost function over iterations, showing how the model improves during training.
 
